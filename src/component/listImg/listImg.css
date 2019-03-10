@@ -1,0 +1,81 @@
+.image {
+    width: 100%;
+}
+
+.element-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.element-action {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 4px;
+}
+
+.user-wrap{
+    position: absolute;
+    display: flex;
+    border-radius: 5px;
+    filter: opacity(90%);
+    visibility: hidden;
+    bottom: 20px;
+    left: 10px;
+    cursor: pointer;
+}
+.user-wrap span {
+    position: absolute;
+    color: white;
+    left: 40px;
+}
+.user-wrap:hover {
+    filter: opacity(100%);
+}
+
+.user {
+    width: 32px;
+    height: 32px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+
+.element-wrap:hover .element-action {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .2) 0, transparent 40%, transparent 60%, rgba(0, 0, 0, .3));
+}
+
+.element-wrap:hover .user-wrap {
+    visibility: visible;
+}
+
+.download-wrap {
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    filter: opacity(90%);
+    visibility: hidden;
+    bottom: 5px;
+    left: 340px;
+    cursor: pointer;
+}
+.download {
+    width: 16px;
+    height: 16px;
+    filter: opacity(85%);
+}
+.download-wrap:hover {
+    filter: opacity(100%);
+}
+
+
+.element-wrap:hover .element-action {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .2) 0, transparent 40%, transparent 60%, rgba(0, 0, 0, .3));
+}
+
+.element-wrap:hover .download-wrap {
+    visibility: visible;
+}
